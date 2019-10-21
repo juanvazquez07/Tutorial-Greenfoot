@@ -30,5 +30,8 @@ public class MyWorld extends World
         addObject(boat,211,187);
         dolphin dolphin = new dolphin();
         addObject(dolphin,372,97);
+        platform platform = new platform();
+        addObject(platform,450, 400);
+        platform.setLocation(407,267);
     }
 }
