@@ -14,9 +14,15 @@ public class boat extends Actor
      */
     public void act() 
     {
-       int x = super.getX();
-       int y = super.getY();
-       
-       
-    }    
+      move();
+    }  
+    
+    public void move(){
+       int x = getX(), y = getY();
+       if(Greenfoot.isKeyDown("W")) y--;
+       if(Greenfoot.isKeyDown("S")) y++;
+       if(Greenfoot.isKeyDown("A")) x--;
+       if(Greenfoot.isKeyDown("D")) x++;
+       setLocation(x, y);
+    }
 }

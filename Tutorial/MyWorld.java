@@ -17,5 +17,18 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
+        prepare();
+    }
+
+    /**
+     * Prepare the world for the start of the program.
+     * That is: create the initial objects and add them to the world.
+     */
+    private void prepare()
+    {
+        boat boat = new boat();
+        addObject(boat,211,187);
+        dolphin dolphin = new dolphin();
+        addObject(dolphin,372,97);
     }
 }
